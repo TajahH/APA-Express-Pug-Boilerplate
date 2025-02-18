@@ -1,8 +1,13 @@
 doctype html
 html
   head
-    title= title
+    title=title
     link(rel='stylesheet', href='/css/style.css')
   body
     h1 Welcome to #{title}
     p This is a boilerplate for Express with Pug.
+    ul 
+      each brand in brands 
+        li 
+          p #{brand.name}
+footer 
